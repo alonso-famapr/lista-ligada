@@ -24,4 +24,8 @@ public class ListaLigada {
         return this.head == null && this.tail == null;
     }
 
+    public void addLast(int valor) {
+
+    }
+
 }

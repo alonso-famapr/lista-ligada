@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4ea70a6-8643-4974-ac12-4ef2d6812f03" name="Changes" comment="Adicionando o arquivo README.md">
+    <list default="true" id="a4ea70a6-8643-4974-ac12-4ef2d6812f03" name="Changes" comment="Teste ativo e operante">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListaLigada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaLigada.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +79,20 @@
       <option name="project" value="LOCAL" />
       <updated>1779236211490</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Teste ativo e operante">
+      <option name="closed" value="true" />
+      <created>1779841371388</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779841371388</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adicionando o arquivo README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando o arquivo README.md" />
+    <MESSAGE value="Teste ativo e operante" />
+    <option name="LAST_COMMIT_MESSAGE" value="Teste ativo e operante" />
   </component>
 </project>
