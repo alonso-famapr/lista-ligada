@@ -433,3 +433,103 @@ Tamanho: 0
 | clear()       | O(1)         |
 | size()        | O(1)         |
 | isEmpty()     | O(1)         |
+
+
+---
+
+## Entendendo a Notação Big O
+
+A notação **Big O** é utilizada para medir a eficiência de algoritmos e estruturas de dados. Ela descreve como o tempo de execução cresce à medida que a quantidade de dados aumenta.
+
+Em outras palavras, a notação Big O nos ajuda a responder à seguinte pergunta:
+
+> O que acontece com o desempenho do algoritmo quando a quantidade de elementos aumenta?
+
+### Complexidade O(1) – Tempo Constante
+
+Uma operação possui complexidade **O(1)** quando sua execução leva praticamente o mesmo tempo, independentemente da quantidade de elementos armazenados na estrutura.
+
+Exemplos na Lista Ligada:
+
+* `addFirst()`
+* `removeFirst()`
+* `size()`
+* `isEmpty()`
+* `clear()`
+
+Por exemplo, para inserir um elemento no início da lista (`addFirst()`), basta atualizar algumas referências (`head`), sem percorrer os elementos existentes.
+
+```text
+10 elementos   -> tempo constante
+100 elementos  -> tempo constante
+1000 elementos -> tempo constante
+```
+
+---
+
+### Complexidade O(n) – Tempo Linear
+
+Uma operação possui complexidade **O(n)** quando seu tempo de execução cresce proporcionalmente à quantidade de elementos da estrutura.
+
+Exemplos na Lista Ligada:
+
+* `contains()`
+* `removeLast()`
+
+Para verificar se um valor existe na lista (`contains()`), pode ser necessário percorrer todos os nós até encontrar o elemento desejado ou chegar ao final da lista.
+
+```text
+10 elementos   -> até 10 verificações
+100 elementos  -> até 100 verificações
+1000 elementos -> até 1000 verificações
+```
+
+Quanto maior a lista, maior será o tempo necessário para concluir a operação.
+
+---
+
+### Por que removeLast() é O(n)?
+
+Mesmo existindo a referência para o último nó (`tail`), uma Lista Ligada Simples não possui referência para o nó anterior.
+
+Considere a lista:
+
+```text
+HEAD
+ ↓
+[10] -> [20] -> [30] -> [40] -> NULL
+                           ↑
+                          TAIL
+```
+
+Para remover o elemento `40`, é necessário localizar o nó `30`, que passará a ser o novo último elemento da lista.
+
+Como cada nó conhece apenas seu próximo nó, é necessário percorrer a lista desde o início até encontrar o penúltimo elemento.
+
+Por esse motivo, a operação possui complexidade:
+
+```text
+O(n)
+```
+
+---
+
+### Resumo
+
+| Complexidade | Significado     | Exemplo na Lista Ligada                 |
+| ------------ | --------------- | --------------------------------------- |
+| O(1)         | Tempo constante | `addFirst()`, `removeFirst()`, `size()` |
+| O(n)         | Tempo linear    | `contains()`, `removeLast()`            |
+
+Em geral, operações que exigem percorrer a lista possuem complexidade **O(n)**, enquanto operações que manipulam apenas referências já conhecidas possuem complexidade **O(1)**.
+
+### Comparação de Crescimento
+
+| Quantidade de Elementos | O(1)       | O(n)                 |
+| ----------------------- | ---------- | -------------------- |
+| 10                      | 1 operação | até 10 operações     |
+| 100                     | 1 operação | até 100 operações    |
+| 1.000                   | 1 operação | até 1.000 operações  |
+| 10.000                  | 1 operação | até 10.000 operações |
+
+Observe que algoritmos com complexidade **O(1)** mantêm o mesmo desempenho independentemente do tamanho da estrutura, enquanto algoritmos **O(n)** tornam-se progressivamente mais custosos conforme a quantidade de elementos aumenta.
