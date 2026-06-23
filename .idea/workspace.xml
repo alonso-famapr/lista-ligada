@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4ea70a6-8643-4974-ac12-4ef2d6812f03" name="Changes" comment="Adicionando a função addLast">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a4ea70a6-8643-4974-ac12-4ef2d6812f03" name="Changes" comment="Enriquecimento da implementação">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListaLigada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaLigada.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,13 +94,22 @@
       <option name="project" value="LOCAL" />
       <updated>1779842035419</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Enriquecimento da implementação">
+      <option name="closed" value="true" />
+      <created>1782203957123</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782203957123</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adicionando o arquivo README.md" />
     <MESSAGE value="Teste ativo e operante" />
     <MESSAGE value="Adicionando a função addLast" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando a função addLast" />
+    <MESSAGE value="Enriquecimento da implementação" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enriquecimento da implementação" />
   </component>
 </project>

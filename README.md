@@ -41,6 +41,17 @@ Onde:
 
 ---
 
+## Características da Lista Ligada
+
+- Estrutura dinâmica de dados.
+- Não possui tamanho fixo.
+- Os elementos não precisam estar armazenados em posições contíguas de memória.
+- Cada elemento mantém uma referência para o próximo elemento.
+- Permite inserções e remoções eficientes no início da lista.
+- O acesso aos elementos é sequencial.
+
+---
+
 ## Estrutura do Projeto
 
 ```text
